@@ -155,7 +155,7 @@ The UI design of the app is inspired by a Dribbble concept: [Quran App Concept](
    ```
 2. Navigate to the project directory:
    ```sh
-   cd quran-app
+   cd quran_app
    ```
 3. Install dependencies:
    ```sh
