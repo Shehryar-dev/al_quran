@@ -62,11 +62,8 @@ The UI design of the app is inspired by a Dribbble concept: [Quran App Concept](
 │   │   │    │── sizes.dart
 │   │   │
 │   │   │── 📂 themes
-│   │   │
 │   │   │── 📂 loader
-│   │   │
 │   │   │── 📂 device
-│   │   │
 │   │   │── 📂 popups
 │   │   │
 │   │── 📂 storage               
