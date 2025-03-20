@@ -42,6 +42,7 @@ Additionally, one API has been sourced from another private repository.
 ## 🎨 UI Inspiration
 The UI design of the app is inspired by a Dribbble concept: [Quran App Concept](https://dribbble.com/shots/12254128-Quran-App-Concept?utm_source=Clipboard_Shot&utm_campaign=anik117&utm_content=Quran%20App%20Concept&utm_medium=Social_Share)
 > Note: This app does not fully replicate the design but takes inspiration for layout and elements.
+
 ![Dribble Ui](assets/app%20screenshot/dribble_ui.png)
 
 
