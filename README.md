@@ -1,7 +1,7 @@
 ![Screen 1](assets/app%20screenshot/1.png)
 ![Screen 2](assets/app%20screenshot/2.png))
-![Screen 3](./assets/screenshots/screen3.png)
-![Screen 4](./assets/screenshots/screen4.png)
+![Screen 3](assets/app%20screenshot/3.png)
+![Screen 4](assets/app%20screenshot/4.png)
 
 # 📖 Quran App
 
@@ -28,55 +28,92 @@ A beautifully designed Flutter application for reading and understanding the Hol
 ## 📂 Project Structure
 
 ```
-lib
-│── core
-│   │── resources
-│   │   │── constants
-│   │   │── assets.dart
-│   │   │── colors.dart
-│   │   │── strings.dart
-│   │   │── themes.dart
-│   │   │── screen_path.dart
-│   │   │── enums.dart
-│   │   │── api_url.dart
-│   │   │── sizes.dart
-│   │── exceptions
+📂 lib
+│── 📂 core
+│   │── 📂 resources               # (App-wide static resources)
+│   │   │── 📂 constants
+│   │   │    │── assets.dart            # (Paths for assets)
+│   │   │    │── colors.dart            # (App color scheme)
+│   │   │    │── strings.dart           # (App-wide strings)
+│   │   │    │── screen_path.dart  
+│   │   │    │── enums.dart
+│   │   │    │── api_url.dart
+│   │   │    │── sizes.dart
+│   │   │
+│   │   │── 📂 themes
+│   │   │
+│   │   │── 📂 loader
+│   │   │
+│   │   │── 📂 device
+│   │   │
+│   │   │── 📂 popups
+│   │   │
+│   │── 📂 storage               
+│   │   │── 📂 quran_pak_storage
+│   │   │    │── quran_pak_storage.dart
+│   │── 📂 exceptions
 │   │   │── app_exception.dart
-│   │── utils
-│   │   │── logger.dart
-│   │   │── validators.dart
-│   │   │── helpers.dart
-│   │   │── network_checker.dart
+│   │── 📂 utils                   # (Helper functions & extensions)
+│   │   │── helpers_function.dart           # (Generic helper functions)
+│   │   │── flushbar_helper.dart   # (Check internet connectivity)
 │
-│── data
-│   │── models
+│── 📂 data
+│   │── 📂 network
+│   │   │── base_api_serrvices.dart
+│   │   │── network_api_dio_serrvices.dart
+│   │   │── network_api_serrvices.dart
+│   │
+│   │── 📂 permissions 
+│   │   │── permission_service.dart
+│   │
+│   │── 📂 models (Freezed Models)
 │   │   │── surah_model.dart
-│   │   │── verse_model.dart
-│   │── repositories
+│   │ 
+│   │── 📂 response
+│   │   │── api_response.dart
+│   │   
+│   │── 📂 repositories  (Quran data fetching logic)
 │   │   │── quran_repository.dart
 │
-│── domain
-│   │── entities
-│   │   │── surah.dart
-│   │── usecases
-│   │   │── get_surah_usecase.dart
-│
-│── presentation
-│   │── screens
-│   │   │── home_screen.dart
-│   │   │── surah_detail_screen.dart
-│   │── widgets
+│──📂 presentation
+│   │── 📂 screens
+│   │   │── 📂 home_screen
+│   │   │   │── home_screen.dart
+│   │   │   │── 📂 widgets
+│   │   │── 📂 introduction_screen
+│   │   │   │── introduction_screen.dart
+│   │   │   │── 📂 widgets
+│   │   │── 📂 last_read
+│   │   │   │── last_read.dart
+│   │   │   │── 📂 widgets
+│   │   │── 📂 prayer_counter
+│   │   │   │── prayer_counter.dart
+│   │   │   │── 📂 widgets
+│   │   │── 📂 qibla_direction
+│   │   │   │── qibla_direction_screen.dart
+│   │   │   │── 📂 screen
+│   │   │── 📂 quran_pak_screen
+│   │   │   │── quran_pak_screen.dart
+│   │   │   │── 📂 widgets
+│   │   │── 📂 salah_time_screen
+│   │   │   │── salah_time_screen.dart
+│   │   │── 📂 splash_screen
+│   │   │   │── splash_screen.dart
+│   │   │── 📂 surat_screen
+│   │   │   │── surat_screen.dart
+│   │   │   │── 📂 widgets
+│   │──📂 common (Reusable Widgets)
 │   │   │── custom_button.dart
 │   │   │── verse_card.dart
-│   │── bloc
+│   │──📂 bloc
 │   │   │── quran_bloc.dart
 │   │   │── quran_event.dart
 │   │   │── quran_state.dart
 │
-│── di
+│── 📂di
 │   │── service_locator.dart
 │
-│── config
+│──📂 config
 │   │── routes.dart
 │   │── routes_name.dart
 │   │── app_config.dart
