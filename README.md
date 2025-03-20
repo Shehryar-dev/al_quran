@@ -29,7 +29,7 @@ A beautifully designed Flutter application for reading and understanding the Hol
 ## 📱 Four Tabs 
 | Read Quran | Read Surat | Bookmarks | Features |
 |------------|------------|------------|------------|
-| ![Read Quran](path/to/read_quran_mockup.png) | ![Read Surat](path/to/read_surat_mockup.png) | ![Bookmarks](path/to/bookmarks_mockup.png) | ![Features](path/to/features.png) |
+| ![Read Quran](assets/app%20screenshot/al_quran_3.png) | ![Read Surat](assets/app%20screenshot/al_quran_8.png) | ![Bookmarks](assets/app%20screenshot/al_quran_13.png) | ![Features](assets/app%20screenshot/al_quran_14.png) |
 
 ## 🔗 APIs Used
 The app integrates multiple APIs for data fetching and functionality:
