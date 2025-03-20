@@ -1,5 +1,5 @@
 ![Screen 1](assets/app%20screenshot/1.png)
-![Screen 2](assets/app%20screenshot/2.png))
+![Screen 2](assets/app%20screenshot/2.png)
 ![Screen 3](assets/app%20screenshot/3.png)
 ![Screen 4](assets/app%20screenshot/4.png)
 
