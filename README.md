@@ -1,86 +1,117 @@
-lib/
-│── core/
-│   ├── api/
-│   │   ├── quran_api.dart
-│   ├── di/
-│   │   ├── injector.dart  <-- GetIt Setup
-│   ├── models/
-│   │   ├── surah_model.dart (Freezed)
-│   ├── repository/
-│   │   ├── quran_repository.dart
-│── data/
-│   ├── sources/
-│   │   ├── remote_data_source.dart
-│── presentation/
-│   ├── screens/
-│   │   ├── home_screen.dart
-│   │   ├── surah_details_screen.dart
-│   ├── widgets/
-│── state_management/
-│   ├── blocs/
-│   │   ├── quran_bloc.dart
-│   │   ├── quran_event.dart
-│   │   ├── quran_state.dart
-│── main.dart
+![Screen 1](assets/app%20screenshot/1.png)
+![Screen 2](assets/app%20screenshot/2.png))
+![Screen 3](./assets/screenshots/screen3.png)
+![Screen 4](./assets/screenshots/screen4.png)
 
-________________________________
-📂 lib
-│── 📂 core
-│   │── 📂 resources               # (App-wide static resources)
-│   │   │── 📂 constants
-│   │       │── assets.dart            # (Paths for assets)
-│   │       │── colors.dart            # (App color scheme)
-│   │       │── strings.dart           # (App-wide strings)
-│   │       │── themes.dart            # (Light/Dark mode themes)
-│   │       │── screen_path.dart  
-│   │       │── enums.dart
-│   │       │── api_url.dart
-│   │       │── sizes.dart
-│
-│    
-│   │── 📂 exceptions
+# 📖 Quran App
+
+A beautifully designed Flutter application for reading and understanding the Holy Quran. This app includes features such as Surah listings, verse-by-verse reading, Qibla direction, Salah time notifications, and more.
+
+## ✨ Features
+
+- 📖 **Read the Quran** – Browse through all the Surahs with a clean UI.
+- 🔍 **Search Functionality** – Quickly find any Surah or Ayah.
+- 🕌 **Qibla Direction** – Locate the accurate direction of the Kaaba.
+- 🕋 **Prayer Times** – Get real-time prayer time alerts.
+- 📊 **Prayer Counter** – Keep track of your daily prayers.
+- 🌙 **Last Read Position** – Resume reading from where you left off.
+- 🎨 **Dark & Light Theme** – Choose between different themes.
+
+## 🛠️ Tech Stack
+
+- **Flutter** – Frontend framework
+- **Dart** – Programming language
+- **Bloc** – State management
+- **REST API** – Fetching data
+- **GetIt** – Dependency injection
+
+## 📂 Project Structure
+
+```
+lib
+│── core
+│   │── resources
+│   │   │── constants
+│   │   │── assets.dart
+│   │   │── colors.dart
+│   │   │── strings.dart
+│   │   │── themes.dart
+│   │   │── screen_path.dart
+│   │   │── enums.dart
+│   │   │── api_url.dart
+│   │   │── sizes.dart
+│   │── exceptions
 │   │   │── app_exception.dart
-│   │
-│   │── 📂 utils                   # (Helper functions & extensions)
-│   │   │── logger.dart            # (Logging utility)
-│   │   │── validators.dart        # (Input validators)
-│   │   │── helpers.dart           # (Generic helper functions)
-│   │   │── network_checker.dart   # (Check internet connectivity)
+│   │── utils
+│   │   │── logger.dart
+│   │   │── validators.dart
+│   │   │── helpers.dart
+│   │   │── network_checker.dart
 │
-│── 📂 data
-│   │── 📂 models
-│   │   │── surah_model.dart       # (Freezed model for Surah)
-│   │   │── verse_model.dart       # (Freezed model for Verses)
-│   │── 📂 repositories
-│   │   │── quran_repository.dart  # (Quran data fetching logic)
+│── data
+│   │── models
+│   │   │── surah_model.dart
+│   │   │── verse_model.dart
+│   │── repositories
+│   │   │── quran_repository.dart
 │
-│── 📂 domain
-│   │── 📂 entities
-│   │   │── surah.dart             # (Entity for clean architecture)
-│   │── 📂 usecases
-│   │   │── get_surah_usecase.dart # (Business logic for Surah)
+│── domain
+│   │── entities
+│   │   │── surah.dart
+│   │── usecases
+│   │   │── get_surah_usecase.dart
 │
-│── 📂 presentation
-│   │── 📂 screens
-│   │   │── home_screen.dart       # (Main Quran UI)
-│   │   │── surah_detail_screen.dart # (Surah details UI)
-│   │── 📂 widgets
-│   │   │── custom_button.dart     # (Reusable Button)
-│   │   │── verse_card.dart        # (UI for single verse)
-│   │── 📂 bloc
-│   │   │── quran_bloc.dart        # (State management)
-│   │   │── quran_event.dart       # (Events for BLoC)
-│   │   │── quran_state.dart       # (States for BLoC)
+│── presentation
+│   │── screens
+│   │   │── home_screen.dart
+│   │   │── surah_detail_screen.dart
+│   │── widgets
+│   │   │── custom_button.dart
+│   │   │── verse_card.dart
+│   │── bloc
+│   │   │── quran_bloc.dart
+│   │   │── quran_event.dart
+│   │   │── quran_state.dart
 │
-│── 📂 di
-│   │── service_locator.dart       # (Dependency Injection using GetIt)
+│── di
+│   │── service_locator.dart
 │
-│── 📂 config
-│   │── 📂 
-│   │   │── routes.dart    
-│   │   │── routes_name.dart
-│   │
-│   │── app_config.dart            # (App-level configurations)
+│── config
+│   │── routes.dart
+│   │── routes_name.dart
+│   │── app_config.dart
 │
-│── main.dart                      # (Entry point)
-│── app.dart                        # (App initialization)
+│── main.dart
+│── app.dart
+```
+
+## 📸 Demo
+
+![Demo](assets/app%20screenshot/video_demo.gif)
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/quran-app.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd quran-app
+   ```
+3. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+4. Run the app:
+   ```sh
+   flutter run
+   ```
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ **Star this repository if you like the project!** 🚀
