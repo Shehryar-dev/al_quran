@@ -130,7 +130,7 @@ A beautifully designed Flutter application for reading and understanding the Hol
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/quran-app.git
+   git clone https://github.com/Shehryar-dev/al_quran.git
    ```
 2. Navigate to the project directory:
    ```sh
