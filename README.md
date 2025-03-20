@@ -10,7 +10,6 @@ A beautifully designed Flutter application for reading and understanding the Hol
 ## ✨ Features
 
 - 📖 **Read the Quran** – Browse through all the Surahs with a clean UI.
-- 🔍 **Search Functionality** – Quickly find any Surah or Ayah.
 - 🕌 **Qibla Direction** – Locate the accurate direction of the Kaaba.
 - 🕋 **Prayer Times** – Get real-time prayer time alerts.
 - 📊 **Prayer Counter** – Keep track of your daily prayers.
@@ -52,7 +51,7 @@ The UI design of the app is inspired by a Dribbble concept: [Quran App Concept](
 ```
 📂 lib
 │── 📂 core
-│   │── 📂 resources               # (App-wide static resources)
+│   │── 📂 resources              
 │   │   │── 📂 constants
 │   │   │    │── assets.dart            # (Paths for assets)
 │   │   │    │── colors.dart            # (App color scheme)
@@ -75,7 +74,7 @@ The UI design of the app is inspired by a Dribbble concept: [Quran App Concept](
 │   │   │    │── quran_pak_storage.dart
 │   │── 📂 exceptions
 │   │   │── app_exception.dart
-│   │── 📂 utils                   # (Helper functions & extensions)
+│   │── 📂 utils                   # (Helper functions)
 │   │   │── helpers_function.dart           # (Generic helper functions)
 │   │   │── flushbar_helper.dart   # (Check internet connectivity)
 │
