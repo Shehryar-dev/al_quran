@@ -170,3 +170,12 @@ This project is licensed under the MIT License.
 ---
 
 ⭐ **Star this repository if you like the project!** 🚀
+
+---
+
+## 💼 Connect
+
+- **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/shehryarkhandiv)
+- **GitHub**: [GitHub](https://github.com/Shehryar-dev)
+- **Twitter**: [X Account](https://x.com/Morphues_S)
+- **Portfolio**: [Portfolio](https://shehriyar-portfolio-v2.netlify.app/)
