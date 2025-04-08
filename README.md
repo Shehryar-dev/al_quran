@@ -46,7 +46,8 @@ The UI design of the app is inspired by a Dribbble concept: [Quran App Concept](
 
 ---
 ## Repo Flow Diagram
-![Dribble Ui](assets/app%20screenshot/flow_diagram.png)
+![Flow](assets/app%20screenshot/flow_diagram.png)
+![Flow](assets/app%20screenshot/flow_diagram1.png)
 
 ---
 ## 📂 Project Structure
